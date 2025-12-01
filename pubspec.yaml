@@ -1,0 +1,37 @@
+name: corita_app
+description: Aplicación médica para adultos mayores.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- LIBRERÍAS DE CORITA ---
+  provider: ^6.1.1           # Manejo de estado
+  http: ^1.2.0               # Conexión API
+  shared_preferences: ^2.2.2 # Guardar sesión
+  image_picker: ^1.0.7       # Tomar fotos
+  flutter_tts: ^3.8.3        # Voz (Texto a Audio)
+  mobile_scanner: ^5.0.0     # Escáner QR
+  google_fonts: ^6.1.0
+  
+  # Iconos estilo iOS (para el selector de hora)
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# --- CONFIGURACIÓN DE ASSETS (IMÁGENES) ---
+flutter:
+  uses-material-design: true
+
+  # Aquí registramos la carpeta de imágenes
+  assets:
+    - assets/images/
+    - assets/tones/
